@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Dog API</title>
+  </head>
+
+  <body>
+    <script src="app.js"></script>
+    <section class="init">
+        <h1>Dog API</h1>
+        <h2>The internet's biggest collection of open source dog pictures.</h2>
+        <h3><a href="https://dog.ceo/dog-api/documentation/">Documentação</a></h3>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>A Dog API (API de cachorros) em "https://dog.ceo/dog-api/" é uma API pública que fornece acesso a imagens aleatórias de cachorros de diferentes raças, bem como informações sobre raças específicas. Ela é usada principalmente para desenvolver aplicativos e sites relacionados a cachorros, como galerias de fotos de cachorros, aplicativos de informações sobre raças, jogos de adivinhação de raças, entre outros.
+
+                        A API possui vários endpoints que permitem acessar diferentes tipos de informações e recursos relacionados a cachorros. Eis alguns dos principais recursos que você pode utilizar com esta API:
+                    </h4>
+                    <ul>
+                        <li>
+                            Endpoint para listagem de raças:
+
+                            URL: "https://dog.ceo/api/breeds/list/all"
+                            Esta endpoint retorna uma lista de todas as raças de cães disponíveis, juntamente com suas sub-raças, se houver.
+                        </li> 
+                        <li>
+                            Endpoint para imagens aleatórias de cachorros:
+                            
+                            URL: "https://dog.ceo/api/breeds/image/random"
+                            Esse endpoint retorna uma URL de uma imagem de cachorro aleatória.
+                        </li>
+                        <li>
+                            Endpoint para imagens por raça de cachorro:
+                            
+                            URL: "https://dog.ceo/api/breed/{raça}/images"
+                            Esse endpoint retorna um conjunto de todas as imagens de uma raça, por exemplo, cão de caça.
+                        </li>
+                        <li>
+                            Endpoint para imagens por sub-raça de cachorro:
+                                
+                            URL: "https://dog.ceo/api/breed/{raça}/list"
+                            Retorna um array de todas as sub-raças de uma raça.
+                        </li>
+                        <li>
+                            Endpoint para navegar na lista de raças:
+                                
+                            URL: "https://dog.ceo/api/breed/{raça}/images/random"
+                            Retorna navegação entre as raças da API.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="botoes">
+            <div class="row">
+                <div class="col-lg-4">
+                    <button id="getBreeds" class="btn btn-dark">Obter Raças de Cachorro</button>
+                    <select id="breedSelect" class="btn btn-dark"></select>
+                </div>    
+                <div class="col-lg-4">
+                    <button id="getBreedImage" class="btn btn-dark">Obter Imagem da Raça</button>
+                    <img id="dogImage" style="display: none;" alt="Imagem de Cachorro">
+                </div>    
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <button type="button" id="loadRandomDog" class="btn btn-dark">Cachorro aleatório</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img id="pic" class="imgale">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+  <footer>Sistemas de Informação / Fundamentos ao Desenvolvimento Web / Gustavo Fabrin Wildner</footer>
+</html>
